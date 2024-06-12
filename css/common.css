@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ヘッダーここから */
+.header-inner {
+  background-color: #ffffff;
+  max-width: 1200px;
+  height: 110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: block;
+  width: 100px;
+
+}
+
+.input-container {
+  margin: 20px;
+}
+
+#keyword-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#keyword-input.keyword-match {
+  border-color: #4CAF50; /* キーワードが一致した場合のスタイル */
+  background-color: #e8f5e9;
+}
+
+.three ul {
+  display: flex;
+  width: 300px;
+}
+
+.site-menu ul {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  background-color: #aaaaaa;
+}
+
+.site-menu ul li {
+  margin: 10px 15px;
+  border-left: 3px solid #6b6b6b;
+}
+
+.site-menu ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.site-menu ul li a:hover {
+  color: #b3b3b3;
+}
+/* ヘッダーここまで */
+
+/* フッターここから */
+.footer {
+  color: #fff;
+  background-color: #6b6b6b;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.footer-box {
+  display: flex;
+  margin: 0 200px;
+}
+
+.footer-box nav {
+}
+  
+.footer-logo {
+  display: block;
+  width: 200px;
+}
+.footer-tel {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 28px;
+}
+.footer-time {
+  font-size: 20px;
+  margin-top: 16px;
+  font-weight: bold;
+}
+.copyright {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.footer nav {
+  padding: 20px;
+}
+
+.footer nav h1 {
+    position: relative; /* 擬似要素の位置を相対的にするために必要 */
+    display: inline-block; /* 要素の幅をテキストに合わせる */
+    margin: 20px;
+    color: #000000;
+}
+
+.footer nav ul {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.footer nav li {
+  margin: 10px 0;
+}
+
+.footer nav h1::after {
+    content: ''; /* 擬似要素を表示させるために必要 */
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%; /* ボーダーの長さを指定 */
+    border-bottom: 3px solid #ff0000; /* ボーダーのスタイルを指定 */
+}
+
+/* フッターここまで */
+
